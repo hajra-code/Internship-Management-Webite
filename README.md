@@ -10,7 +10,7 @@ This project was developed as my final internship project during my internship a
 
 ## 🌐 Live Demo
 
-View Live Demo: YOUR_LIVE_DEMO_LINK_HERE
+View Live Demo: https://hajra-code.github.io/Internship-Management-Website/ 
 
 ---
 
