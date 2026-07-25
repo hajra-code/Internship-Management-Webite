@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InternFlow | Internship Management Platform</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- =====================================================
+         HOMEPAGE
+    ====================================================== -->
+
+    <section id="landingPage" class="page">
+
+        <!-- NAVBAR -->
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <div class="logo-icon">
+                    <i class="fa-solid fa-layer-group"></i>
+                </div>
+
+                <span>Intern<span class="logo-highlight">Flow</span></span>
+
+            </div>
+
+
+            <div class="nav-links">
+
+                <a href="#home">Home</a>
+
+                <a href="#features">Features</a>
+
+                <a href="#how-it-works">How It Works</a>
+
+                <button class="nav-login-btn" onclick="goToLogin()">
+                    Login
+                </button>
+
+                <button class="nav-register-btn" onclick="goToRegister()">
+                    Get Started
+                </button>
+
+            </div>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button class="mobile-menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+        </nav>
+
+
+        <!-- HERO SECTION -->
+
+        <section id="home" class="hero-section">
+
+            <div class="hero-content">
+
+                <div class="hero-badge">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    The smarter way to manage internships
+
+                </div>
+
+
+                <h1>
+
+                    Learn.
+
+                    <span class="gradient-text">
+                        Build.
+                    </span>
+
+                    Grow.
+
+                </h1>
+
+
+                <p>
+
+                    InternFlow brings everything you need to manage your
+                    internship journey into one simple and powerful platform.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <button class="primary-btn"
+                        onclick="goToRegister()">
+
+                        Start Your Journey
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <button class="secondary-btn"
+                        onclick="goToLogin()">
+
+                        Explore Platform
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </div>
+
+
+                <div class="hero-stats">
+
+                    <div class="stat">
+
+                        <strong>100+</strong>
+
+                        <span>Interns</span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>500+</strong>
+
+                        <span>Projects</span>
+
+                    </div>
+
+
+                    <div class="stat">
+
+                        <strong>95%</strong>
+
+                        <span>Success Rate</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div class="dashboard-preview">
+
+                    <div class="preview-header">
+
+                        <div class="preview-dots">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="preview-content">
+
+                        <div class="preview-sidebar">
+
+                            <div class="preview-sidebar-item active">
+
+                                <i class="fa-solid fa-house"></i>
+
+                            </div>
+
+                            <div class="preview-sidebar-item">
+
+                                <i class="fa-solid fa-list-check"></i>
+
+                            </div>
+
+                            <div class="preview-sidebar-item">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="preview-main">
+
+                            <div class="preview-welcome">
+
+                                <div>
+
+                                    <small>
+                                        Welcome back 👋
+                                    </small>
+
+                                    <h3>
+                                        Your Internship Journey
+                                    </h3>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="preview-cards">
+
+                                <div class="preview-card">
+
+                                    <i class="fa-solid fa-list-check"></i>
+
+                                    <div>
+
+                                        <strong>12</strong>
+
+                                        <small>
+                                            Tasks Completed
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="preview-card">
+
+                                    <i class="fa-solid fa-trophy"></i>
+
+                                    <div>
+
+                                        <strong>86%</strong>
+
+                                        <small>
+                                            Progress
+                                        </small>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="preview-progress">
+
+                                <div class="progress-title">
+
+                                    <span>
+                                        Current Progress
+                                    </span>
+
+                                    <strong>
+                                        86%
+                                    </strong>
+
+                                </div>
+
+
+                                <div class="progress-bar">
+
+                                    <div class="progress-fill"></div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES SECTION -->
+
+        <section id="features" class="features-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    EVERYTHING YOU NEED
+                </span>
+
+                <h2>
+                    Your internship,
+                    <span class="gradient-text">
+                        simplified.
+                    </span>
+                </h2>
+
+                <p>
+                    From your first task to your final submission,
+                    InternFlow helps you stay organized and focused.
+                </p>
+
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon purple">
+
+                        <i class="fa-solid fa-clipboard-check"></i>
+
+                    </div>
+
+                    <h3>
+                        Task Management
+                    </h3>
+
+                    <p>
+                        Keep track of your assigned tasks,
+                        deadlines, and progress in one organized place.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon blue">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    </div>
+
+                    <h3>
+                        Easy Submissions
+                    </h3>
+
+                    <p>
+                        Submit your projects and internship work
+                        through a simple and organized platform.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon pink">
+
+                        <i class="fa-solid fa-chart-line"></i>
+
+                    </div>
+
+                    <h3>
+                        Track Your Growth
+                    </h3>
+
+                    <p>
+                        Monitor your progress and see how far
+                        you have come throughout your internship.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HOW IT WORKS SECTION -->
+
+        <section id="how-it-works" class="how-section">
+
+            <div class="section-heading">
+
+                <span class="section-label">
+                    SIMPLE PROCESS
+                </span>
+
+                <h2>
+                    Your journey starts
+                    <span class="gradient-text">
+                        here.
+                    </span>
+                </h2>
+
+            </div>
+
+
+            <div class="steps-container">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Create Your Account
+                        </h3>
+
+                        <p>
+                            Register on InternFlow and create
+                            your personal internship profile.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Complete Your Tasks
+                        </h3>
+
+                        <p>
+                            View your assigned tasks and work
+                            on your internship projects.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <div class="step-content">
+
+                        <h3>
+                            Submit & Grow
+                        </h3>
+
+                        <p>
+                            Submit your work, track your progress,
+                            and build valuable experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CALL TO ACTION -->
+
+        <section class="cta-section">
+
+            <div class="cta-content">
+
+                <h2>
+                    Ready to start your journey?
+                </h2>
+
+                <p>
+                    Turn your internship experience into
+                    meaningful growth.
+                </p>
+
+                <button class="primary-btn"
+                    onclick="goToRegister()">
+
+                    Get Started
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer class="footer">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+
+                    <div class="logo">
+
+                        <div class="logo-icon">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <span>
+                            Intern<span class="logo-highlight">
+                                Flow
+                            </span>
+                        </span>
+
+                    </div>
+
+
+                    <p>
+                        Built for learning.
+                        Designed for growth.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+
+                    <a href="#home">
+                        Home
+                    </a>
+
+                    <a href="#features">
+                        Features
+                    </a>
+
+                    <a href="#how-it-works">
+                        How It Works
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 InternFlow.
+                    All rights reserved.
+                </p>
+
+                <p>
+                    Built with HTML, CSS & JavaScript
+                </p>
+
+            </div>
+
+        </footer>
+
+    </section>
+
+
+    <!-- =====================================================
+         REGISTRATION PAGE
+    ====================================================== -->
+
+    <section id="registerPage" class="page hidden">
+
+        <div class="auth-page">
+
+            <div class="auth-container">
+
+                <button class="back-button"
+                    onclick="goToHome()">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to Home
+
+                </button>
+
+
+                <div class="auth-card">
+
+                    <div class="auth-logo">
+
+                        <div class="logo-icon">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <span>
+                            Intern<span class="logo-highlight">
+                                Flow
+                            </span>
+                        </span>
+
+                    </div>
+
+
+                    <h1>
+                        Create your account
+                    </h1>
+
+
+                    <p class="auth-subtitle">
+
+                        Start your internship journey today.
+
+                    </p>
+
+
+                    <form id="registerForm">
+
+
+                        <div class="form-group">
+
+                            <label for="registerName">
+
+                                Full Name
+
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-regular fa-user"></i>
+
+                                <input type="text"
+                                    id="registerName"
+                                    placeholder="Enter your full name"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerEmail">
+
+                                Email Address
+
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email"
+                                    id="registerEmail"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="registerPassword">
+
+                                Password
+
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input type="password"
+                                    id="registerPassword"
+                                    placeholder="Create a password"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit"
+                            class="auth-submit-btn">
+
+                            Create Account
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </form>
+
+
+                    <p class="auth-switch">
+
+                        Already have an account?
+
+                        <button onclick="goToLogin()">
+
+                            Login here
+
+                        </button>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         LOGIN PAGE
+    ====================================================== -->
+
+    <section id="loginPage" class="page hidden">
+
+        <div class="auth-page">
+
+            <div class="auth-container">
+
+                <button class="back-button"
+                    onclick="goToHome()">
+
+                    <i class="fa-solid fa-arrow-left"></i>
+
+                    Back to Home
+
+                </button>
+
+
+                <div class="auth-card">
+
+                    <div class="auth-logo">
+
+                        <div class="logo-icon">
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <span>
+
+                            Intern<span class="logo-highlight">
+                                Flow
+                            </span>
+
+                        </span>
+
+                    </div>
+
+
+                    <h1>
+                        Welcome back
+                    </h1>
+
+
+                    <p class="auth-subtitle">
+
+                        Continue your internship journey.
+
+                    </p>
+
+
+                    <form id="loginForm">
+
+
+                        <div class="form-group">
+
+                            <label for="loginEmail">
+
+                                Email Address
+
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-regular fa-envelope"></i>
+
+                                <input type="email"
+                                    id="loginEmail"
+                                    placeholder="Enter your email"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="loginPassword">
+
+                                Password
+
+                            </label>
+
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-solid fa-lock"></i>
+
+                                <input type="password"
+                                    id="loginPassword"
+                                    placeholder="Enter your password"
+                                    required>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="submit"
+                            class="auth-submit-btn">
+
+                            Login
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </form>
+
+
+                    <p class="auth-switch">
+
+                        Don't have an account?
+
+                        <button onclick="goToRegister()">
+
+                            Create one
+
+                        </button>
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         DASHBOARD PAGE
+    ====================================================== -->
+
+    <section id="dashboardPage" class="page hidden">
+
+        <div class="dashboard-layout">
+
+
+            <!-- SIDEBAR -->
+
+            <aside class="sidebar">
+
+                <div class="sidebar-logo">
+
+                    <div class="logo-icon">
+
+                        <i class="fa-solid fa-layer-group"></i>
+
+                    </div>
+
+                    <span>
+
+                        Intern<span class="logo-highlight">
+                            Flow
+                        </span>
+
+                    </span>
+
+                </div>
+
+
+                <nav class="sidebar-nav">
+
+                    <a href="javascript:void(0)"
+                        class="sidebar-link active"
+                        onclick="showDashboardSection('overviewSection')">
+
+                        <i class="fa-solid fa-house"></i>
+
+                        Overview
+
+                    </a>
+
+
+                    <a href="javascript:void(0)"
+                        class="sidebar-link"
+                        onclick="showDashboardSection('tasksSection')">
+
+                        <i class="fa-solid fa-list-check"></i>
+
+                        My Tasks
+
+                    </a>
+
+
+                    <a href="javascript:void(0)"
+                        class="sidebar-link"
+                        onclick="showDashboardSection('submissionsSection')">
+
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                        Submissions
+
+                    </a>
+
+                </nav>
+
+
+                <button class="sidebar-logout"
+                    onclick="logout()">
+
+                    <i class="fa-solid fa-right-from-bracket"></i>
+
+                    Logout
+
+                </button>
+
+            </aside>
+
+
+            <!-- DASHBOARD CONTENT -->
+
+            <main class="dashboard-main">
+
+
+                <!-- DASHBOARD HEADER -->
+
+                <header class="dashboard-header">
+
+                    <div>
+
+                        <p class="date-display"></p>
+
+                        <h1>
+
+                            Welcome back,
+
+                            <span class="user-name">
+                                Intern
+                            </span>
+                            👋
+
+                        </h1>
+
+                        <p>
+                            Here's an overview of your internship journey.
+                        </p>
+
+                    </div>
+
+
+                    <button class="mobile-menu-btn">
+
+                        <i class="fa-solid fa-bars"></i>
+
+                    </button>
+
+                </header>
+
+
+                <!-- OVERVIEW SECTION -->
+
+                <section id="overviewSection"
+                    class="dashboard-section">
+
+
+                    <div class="dashboard-stats">
+
+
+                        <div class="dashboard-stat-card">
+
+                            <div class="stat-icon purple">
+
+                                <i class="fa-solid fa-list-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Total Tasks
+                                </span>
+
+                                <strong>
+                                    12
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-stat-card">
+
+                            <div class="stat-icon blue">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Completed
+                                </span>
+
+                                <strong>
+                                    8
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="dashboard-stat-card">
+
+                            <div class="stat-icon pink">
+
+                                <i class="fa-solid fa-chart-line"></i>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Progress
+                                </span>
+
+                                <strong>
+                                    67%
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h2>
+                                    Your Progress
+                                </h2>
+
+                                <p>
+                                    Keep going! You're doing great.
+                                </p>
+
+                            </div>
+
+                            <strong>
+                                67%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="large-progress-bar">
+
+                            <div class="large-progress-fill"></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+                        <div class="card-header">
+
+                            <h2>
+                                Recent Activity
+                            </h2>
+
+                        </div>
+
+
+                        <div class="activity-item">
+
+                            <div class="activity-icon">
+
+                                <i class="fa-solid fa-check"></i>
+
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Welcome to InternFlow!
+                                </strong>
+
+                                <p>
+                                    Your internship journey starts here.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+
+                <!-- TASKS SECTION -->
+
+                <section id="tasksSection"
+                    class="dashboard-section hidden">
+
+
+                    <div class="section-title-row">
+
+                        <div>
+
+                            <h2>
+                                My Tasks
+                            </h2>
+
+                            <p>
+                                Manage your internship assignments.
+                            </p>
+
+                        </div>
+
+
+                        <div class="task-filters">
+
+                            <button class="filter-btn active"
+                                data-filter="all">
+
+                                All
+
+                            </button>
+
+                            <button class="filter-btn"
+                                data-filter="pending">
+
+                                Pending
+
+                            </button>
+
+                            <button class="filter-btn"
+                                data-filter="completed">
+
+                                Completed
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="tasks-grid">
+
+
+                        <div class="task-card"
+                            data-status="completed">
+
+                            <div class="task-card-top">
+
+                                <span class="task-status completed">
+
+                                    Completed
+
+                                </span>
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </div>
+
+                            <h3>
+                                Build a Portfolio Website
+                            </h3>
+
+                            <p>
+                                Create a responsive personal portfolio using HTML and CSS.
+                            </p>
+
+                            <div class="task-card-bottom">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    Completed
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="task-card"
+                            data-status="pending">
+
+                            <div class="task-card-top">
+
+                                <span class="task-status pending">
+
+                                    In Progress
+
+                                </span>
+
+                                <i class="fa-solid fa-ellipsis"></i>
+
+                            </div>
+
+                            <h3>
+                                Create a JavaScript Project
+                            </h3>
+
+                            <p>
+                                Build an interactive website using JavaScript.
+                            </p>
+
+                            <div class="task-card-bottom">
+
+                                <span>
+                                    <i class="fa-regular fa-calendar"></i>
+                                    Due Soon
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+                <!-- SUBMISSIONS SECTION -->
+
+                <section id="submissionsSection"
+                    class="dashboard-section hidden">
+
+
+                    <div class="section-title-row">
+
+                        <div>
+
+                            <h2>
+                                Submit Your Work
+                            </h2>
+
+                            <p>
+                                Share your completed internship projects.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+
+                        <form id="submissionForm">
+
+
+                            <div class="form-group">
+
+                                <label for="submissionTask">
+
+                                    Task Name
+
+                                </label>
+
+                                <input type="text"
+                                    id="submissionTask"
+                                    placeholder="Enter task name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="submissionProject">
+
+                                    Project Name
+
+                                </label>
+
+                                <input type="text"
+                                    id="submissionProject"
+                                    placeholder="Enter project name"
+                                    required>
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="submissionDescription">
+
+                                    Description
+
+                                </label>
+
+                                <textarea
+                                    id="submissionDescription"
+                                    placeholder="Describe your work..."
+                                    rows="5"
+                                    required></textarea>
+
+                            </div>
+
+
+                            <button type="submit"
+                                class="auth-submit-btn">
+
+                                Submit Project
+
+                                <i class="fa-solid fa-paper-plane"></i>
+
+                            </button>
+
+
+                        </form>
+
+                    </div>
+
+
+                    <div id="submissionsContainer">
+
+                    </div>
+
+                </section>
+
+            </main>
+
+        </div>
+
+    </section>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
